@@ -1,5 +1,5 @@
-# CrackStation (V1.0.3)
-Crackstation is a password cracking station that uses sha1 encoding. It is able to crack passwords that satisfy this range [a-zA-Z0-9] of single characters and are encrypted using SHA-1. It can also crack any password that is up to two characters long and satisfies any two characters in the range [a-zA-Z0-9] and is encrypted using SHA-1. The purpose of this Crackstation is to understand the workflow of encryption and decryption of cracking stations. The working principle is in the swift file named Crackstation.
+# CrackStation (V1.0.4)
+Crackstation is a password cracking station that uses sha1 encoding. It is able to crack passwords that satisfy this range [a-zA-Z0-9] of single characters and are encrypted using SHA-1. It can also crack any password that is up to two characters long and satisfies any two characters in the range [a-zA-Z0-9] and is encrypted using SHA-1. It now can crack any password that is up to three characters. The purpose of this Crackstation is to understand the workflow of encryption and decryption of cracking stations. The working principle is in the swift file named Crackstation.
 
 ## How to Use this library
 Step 1: Import the CrackStation
@@ -14,6 +14,12 @@ Provide a SHA-1 digest into the function and see if it spit out a plain-text pas
 hash1 = "df211ccdd94a63e0bcb9e6ae427a249484a49d60"
 testObject.decrypt(shaHash: hash1)
 decrypt result: "as"
+</code></pre>
+
+<pre><code>
+hash1 = "df211ccdd94a63e0bcb9e6ae427a249484a49d20"
+testObject.decrypt(shaHash: hash1)
+decrypt result: "asA"
 </code></pre>
 
 
@@ -37,4 +43,4 @@ public protocol Decrypter {
 ## Author
 Ming Wei
 ## Release tag
-1.0.3
+1.0.4
