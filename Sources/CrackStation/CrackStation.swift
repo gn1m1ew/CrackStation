@@ -23,14 +23,8 @@ public class CrackStation: Decrypter {
     
     public func decrypt(shaHash: String) -> String? {
 
-//        let lookUptable = try! CrackStation.loadDictionaryFromDisk()
         let answer = lookUptable[shaHash]
-        if(answer == nil){
-            return nil
-        }
-        else{
             return answer
-        }
 
     }
 }

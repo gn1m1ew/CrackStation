@@ -35,5 +35,21 @@ final class CrackStationTests: XCTestCase {
         let answer = CrackStation().decrypt(shaHash: Hash1)
         XCTAssertEqual(answer, "as")
     }
+    func testLoadingLookupTableFromDisk4() throws {
+        // This is an example of a functional test case.
+        // Use XCTAssert and related functions to verify your tests produce the correct
+        // results.
+        let Hash1 = "7e240de74fb1ed08fa08d38063f6a6a91462a815"
+        let answer = CrackStation().decrypt(shaHash: Hash1)
+        XCTAssertEqual(answer, "aaa")
+    }
+    func testLoadingLookupTableFromDisk5() throws {
+        // This is an example of a functional test case.
+        // Use XCTAssert and related functions to verify your tests produce the correct
+        // results.
+        let Hash1 = "eb7c8e5b7b855ed2712d5ffcc21b68d5e3b8a16b"
+        let answer = CrackStation().decrypt(shaHash: Hash1)
+        XCTAssertEqual(answer, "aEA")
+    }
 
 }
