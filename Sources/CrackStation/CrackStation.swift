@@ -25,6 +25,5 @@ public class CrackStation: Decrypter {
 
         let answer = lookUptable[shaHash]
             return answer
-
     }
 }
