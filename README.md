@@ -1,14 +1,16 @@
 # CrackStation (V2.0.1)
 
-Crackstation is a password cracking station that uses sha1 encoding. 
+Crackstation is a password decrypt library that uses sha1 and sha256 decoding without salted. 
 
 ## Overview
 
-Crack Station should be able to crack any password that is up to three characters in length.
+Hashing is a one-way process that converts a password to ciphertext using hash algorithms. A hashed password cannot be decrypted, but a hacker can try to reverse engineer it. Password salting adds random characters before or after a password prior to hashing to obfuscate the actual password.
+
+Crack Station should be able to crack any password that is up to three characters in length. This library can be used as a decryption setting for client to server communication. Both the client and the server can verify that the entered hash corresponds to the current password by accessing the file where the encrypted data is stored. The purpose is to be used to set up automatic password recognition. This library can also be used as a way to verify that the hash value of the current character corresponds.
 
 ## Mission Statement
 
-It is able to crack passwords that satisfy this range [a-zA-Z0-9?!] of single characters and are encrypted using SHA-1. It can also crack any password that is up to two characters long and satisfies any two characters in the range [a-zA-Z0-9?!] and is encrypted using SHA-1. It now can crack any password that is up to three characters. The purpose of this Crackstation is to understand the workflow of encryption and decryption of cracking stations. The working principle is in the swift file named Crackstation.
+It is able to crack passwords that satisfy this range [a-zA-Z0-9?!] of single characters and are encrypted using SHA-1. It can also crack any password that is up to two characters long and satisfies any two characters in the range [a-zA-Z0-9?!] and is encrypted using SHA-1. It now can crack any password that is up to three characters. Currently this cracking station is only able to complete cracking without salt. The purpose of this Crackstation is to understand the workflow of encryption and decryption of cracking stations. The working principle is in the swift file named Crackstation.
 
 ## Installation
 
@@ -66,4 +68,4 @@ decrypt result: "asA"
 ## Author
 Ming Wei
 ## Release tag
-2.0.1
+2.0.3
