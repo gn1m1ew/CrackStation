@@ -3,7 +3,7 @@ import CryptoKit
 
 public class CrackStation: Decrypter {
     
-    public var lookUptable: [String : String] = [:]
+    private var lookUptable: [String : String] = [:]
     
     public required init(){
         self.lookUptable = try! CrackStation.loadDictionaryFromDisk()
