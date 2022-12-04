@@ -1,4 +1,5 @@
 import Foundation
+import CryptoKit
 
 public class CrackStation: Decrypter {
     
